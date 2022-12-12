@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/Vinge1718/yolo#readme",
   "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "body-parser": "^1.19.0",
     "concurrently": "^5.2.0",
     "cors": "^2.8.5",
