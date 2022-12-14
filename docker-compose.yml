@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  api:
+    build: ./backend
+    image: masaialvin/yolo_backend
+    container_name: yolo_backend_container
+    ports:
+      - '5000:5000'
+    networks:
+      - yolo_network
+    depends_on:
+      - mongo
+  client:
+    build: ./client
+    image: masaialvin/yolo_client
+    container_name: yolo_client_container
+    ports:
+      - '3000:3000'
+    networks:
+      - yolo_network 
+    depends_on:
+      - api
+  mongo:
+    image: mongo
+    container_name: mongo_db
+    ports:
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: alvin.mugo@student.moringaschool.com
+      MONGO_INITDB_ROOT_PASSWORD: nB9bpLW3D6MSGe9
+    networks:
+      - yolo_network 
+    volumes:
+      - mydb:/data/db
+volumes:
+  mydb:
+networks:
+  yolo_network:
+    driver: bridge
