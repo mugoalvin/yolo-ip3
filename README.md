@@ -21,3 +21,16 @@ Make sure that you have the following installed:
  `npm start`
 
  ### Go ahead and add a product (note that the price field only takes a numeric input)
+
+ RUNNING THE APPLICATION WITH DOCKER COMPOSE FILE
+Instructions
+
+    Fork and Clone : https://github.com/mugoalvin/yolo
+    Change in to yolo directory : cd yolo
+    Add MongoDB configuration on server.js file
+    Add Dockerfile
+    Add docker-compose.yml file (more details on docker-compose.yml and docker file are on explanation.md file)
+    Run docker compose to install the image and create a container : sudo docker compose up --build
+    Backend runs on port 5000 and Frontend runs on port 3000.
+    Push images to docker hub : sudo docker compose push
+    Go ahead a nd add a product (note that the price field only takes a numeric input)
