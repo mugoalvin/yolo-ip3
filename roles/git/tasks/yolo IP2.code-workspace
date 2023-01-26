@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "yolo IP2",
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
