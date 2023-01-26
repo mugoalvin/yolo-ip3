@@ -1,28 +1,36 @@
+To view the application Yolo please, click here https://34.105.128.4:3000.
+
 # Requirements
+
 Make sure that you have the following installed:
-- [node](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04) 
-- npm 
+
+- [node](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04)
+- npm
 - [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/) and start the mongodb service with `sudo service mongod start`
 
-## Navigate to the Client Folder 
- `cd client`
+## Navigate to the Client Folder
 
-## Run the folllowing command to install the dependencies 
- `npm install`
+`cd client`
 
-## Run the folllowing to start the app
- `npm start`
+## Run the following command to install the dependencies
+
+`npm install`
+
+## Run the following to start the app
+
+`npm start`
 
 ## Open a new terminal and run the same commands in the backend folder
- `cd ../backend`
 
- `npm install`
+`cd ../backend`
 
- `npm start`
+`npm install`
 
- ### Go ahead and add a product (note that the price field only takes a numeric input)
+`npm start`
 
- RUNNING THE APPLICATION WITH DOCKER COMPOSE FILE
+### Go ahead and add a product (note that the price field only takes a numeric input)
+
+RUNNING THE APPLICATION WITH DOCKER COMPOSE FILE
 Instructions
 
     Fork and Clone : https://github.com/mugoalvin/yolo
